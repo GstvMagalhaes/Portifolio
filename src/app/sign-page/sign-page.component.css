@@ -1,0 +1,45 @@
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    height: 36rem;
+}
+
+h6{
+    /* font-size: 0rem; */
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button.btn.btn-primary{
+    margin-top: 1rem;
+    width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1246FF;
+    color: white;
+    font-size: 1.3rem;
+}
+
+button.btn.btn-light{
+    width: 70%;
+    border-radius: 10px;
+    border: solid 1px #000000;
+}
+
+button.btn.btn-light:hover{
+    background-color: #f4f4f4;
+}
+
+button.btn.btn-primary:hover{
+    background-color: #3c66ff;
+}
+
+label{
+    font-weight: bold;
+}
+
+.form-group{
+    margin-top: 1rem;
+    width: 100%;
+}
+
