@@ -31,8 +31,12 @@
     />
   </div>
 </div>
-<app-menu-items *ngIf="tela1"></app-menu-items>
-<app-item-component></app-item-component>
+
+<app-menu-items *ngIf="!tela1" (toggle)="toggleComponents()"></app-menu-items>
+<app-item-component
+  *ngIf="!tela2"
+  (toggle)="toggleComponents()"
+></app-item-component>
 
 <div style="position: fixed; bottom: 5; right: 0">
   <img

@@ -18,7 +18,12 @@
     </p>
 
     <div>
-      <button type="button" class="btn btn-light" style="margin-right: 5rem">
+      <button
+        type="button"
+        class="btn btn-light"
+        style="margin-right: 5rem"
+        (click)="onToggle()"
+      >
         Comprar
         <img
           src="https://cdn-icons-png.flaticon.com/512/44/44766.png"
@@ -32,7 +37,7 @@
         />
       </button>
 
-      <button type="button" class="btn btn-light">
+      <button type="button" class="btn btn-light" (click)="onToggle()">
         Carrinho
         <img
           src="https://th.bing.com/th/id/R.3a142deb575a914f4539d0a7f88791b6?rik=A7ExdAnGRThXdw&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f7%2fCart-PNG-Image.png&ehk=y6BrtzzSGUlZ4oIC8NSR%2bxzgS2kXfQUuoVcsh83ACP8%3d&risl=&pid=ImgRaw&r=0"

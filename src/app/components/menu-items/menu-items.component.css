@@ -26,3 +26,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.cardItens:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(32, 173, 255, 0.568);
+  background: linear-gradient(to top, #ffffff, rgba(37, 42, 88, 0.062));
+}

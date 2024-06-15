@@ -1,6 +1,6 @@
 .card {
   width: 45rem;
-  height: 45rem;
+  height: 42rem;
   margin-left: 6rem;
   margin-right: 6rem;
   margin-top: 3rem;
@@ -25,25 +25,6 @@ label {
 
 .card-header {
   background-color: #474747;
-}
-
-.card2-header {
-  background-color: #474747;
-  height: 2rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
-}
-
-.card2 {
-  width: 45rem;
-  height: 8rem;
-  margin-left: 20rem;
-
-  margin-top: 13rem;
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
 }
 
 .form2-check-input {

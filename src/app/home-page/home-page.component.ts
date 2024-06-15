@@ -15,5 +15,11 @@ export class HomePageComponent {
 
   ngOnInit() {}
 
-  tela1 = false;
+  tela1: boolean = false;
+  tela2: boolean = true;
+
+  toggleComponents() {
+    this.tela1 = !this.tela1;
+    this.tela2 = !this.tela2;
+  }
 }

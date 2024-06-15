@@ -19,3 +19,18 @@
   width: 70px;
   height: 70px;
 }
+
+.searchInput:focus {
+  color: #1d1d1d;
+  outline: none;
+
+  border: 1px solid #1d1d1d;
+}
+.searchInput:hover {
+  box-shadow: #1d1d1d 0px 0px 3px;
+  border: 1px solid #1d1d1d;
+}
+
+.searchInput :focus::-webkit-input-placeholder {
+  color: transparent;
+}
