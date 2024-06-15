@@ -1,0 +1,64 @@
+.card {
+  width: 45rem;
+  height: 45rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.row {
+  padding: 0.8rem;
+}
+
+.cardGender {
+  width: 65rem;
+  height: 35rem;
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+
+.card-header {
+  background-color: #474747;
+}
+
+.card2-header {
+  background-color: #474747;
+  height: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.card2 {
+  width: 45rem;
+  height: 8rem;
+  margin-left: 20rem;
+
+  margin-top: 13rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.form2-check-input {
+  border: #474747 solid 1px;
+  margin-left: 1rem;
+}
+
+button.btn.btn-light {
+  width: 120%;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #2b2b2b;
+  border: solid 1px #000000;
+}
+
+button.btn.btn-light:hover {
+  background-color: #464646;
+}

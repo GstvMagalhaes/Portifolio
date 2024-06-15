@@ -1,24 +1,32 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
 }
 
-img{
-    margin-left: 1.5rem;
-    max-width: 100%;
+.logo {
+  margin-right: 82rem;
+  margin-left: 1rem;
+  max-width: 100%;
 }
 
-nav{
-    border: solid 1px #252525;
-    height: 8rem;
-    background-image: url('../assets/Rectangle.png');
+.icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: solid 1px #00000034;
+  border-radius: 5rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+nav {
+  border: solid 1px #252525;
+  height: 8rem;
+  background-image: url("../assets/Rectangle.png");
+}
