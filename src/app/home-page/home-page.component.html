@@ -1,72 +1,43 @@
-<div style="display: flex; justify-content: center; align-items: center; height: 10vh; margin-left: 36rem;">
-    <div class="input-group">
-        <span class="input-group-text" id="basic-addon1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
-          </svg>
-        </span>
-        <input type="text" class="searchInput" placeholder="Pesquise um produto" aria-label="Pesquise um produto" aria-describedby="basic-addon1">
-    </div>
+<div
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-left: 36rem;
+  "
+>
+  <div class="input-group">
+    <span class="input-group-text" id="basic-addon1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-search"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+        ></path>
+      </svg>
+    </span>
+    <input
+      type="text"
+      class="searchInput"
+      placeholder="Pesquise um produto"
+      aria-label="Pesquise um produto"
+      aria-describedby="basic-addon1"
+    />
+  </div>
 </div>
+<app-menu-items *ngIf="tela1"></app-menu-items>
+<app-item-component></app-item-component>
 
-<div class="container">
-    <div class="cardItens">
-        <img class="productImage" src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$" alt="Product 1">
-        <div class="group-text">
-            <p>Controle Dualsense Cfi-zct1 Sem Fio Ps5 Galactic Purple...</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
-    <div class="cardItens">
-        <img class="productImage" src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/help/images/D2gateway/spot_efd_dot_ring.png" alt="Product 1">
-        <div class="group-text">
-            <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-            <p style="font-weight: bold;">R$ 229,89</p>
-        </div>
-    </div>
-    <div class="cardItens">
-        <img class="productImage" src="https://www.pioneerdj.com/-/media/pioneerdj/images/products/headphones/hdj-x5bt/black/hdj-x5bt-k-main-bt-2.png?h=630&w=1200&hash=DCDE0139A27DE3C6B4976052C7305F4C" alt="Product 2">
-        <div class="group-text">
-            <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
-    <div class="cardItens">
-        <img class="productImage" src="https://www.pioneerdj.com/-/media/pioneerdj/images/products/headphones/hdj-x5bt/black/hdj-x5bt-k-main-bt-2.png?h=630&w=1200&hash=DCDE0139A27DE3C6B4976052C7305F4C" alt="Product 2">
-        <div class="group-text">
-            <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
-</div>
-
-<div class="container" style="margin-top: 2rem;">
-    <div class="cardItens">
-        <img class="productImage" src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$" alt="Product 1">
-        <div class="group-text">
-            <p>Controle Dualsense Cfi-zct1  Sem Fio Ps5 Galactic Purple...</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
-        <div class="cardItens">
-        <img class="productImage" src="https://www.pioneerdj.com/-/media/pioneerdj/images/products/headphones/hdj-x5bt/black/hdj-x5bt-k-main-bt-2.png?h=630&w=1200&hash=DCDE0139A27DE3C6B4976052C7305F4C" alt="Product 2">
-        <div class="group-text">
-            <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
-    <div class="cardItens">
-        <img class="productImage" src="https://www.pioneerdj.com/-/media/pioneerdj/images/products/headphones/hdj-x5bt/black/hdj-x5bt-k-main-bt-2.png?h=630&w=1200&hash=DCDE0139A27DE3C6B4976052C7305F4C" alt="Product 2">
-        <div class="group-text">
-            <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
-    <div class="cardItens">
-        <img class="productImage" src="https://www.pioneerdj.com/-/media/pioneerdj/images/products/headphones/hdj-x5bt/black/hdj-x5bt-k-main-bt-2.png?h=630&w=1200&hash=DCDE0139A27DE3C6B4976052C7305F4C" alt="Product 2">
-        <div class="group-text">
-            <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-            <p style="font-weight: bold;">R$ 469,00</p>
-        </div>
-    </div>
+<div style="position: fixed; bottom: 5; right: 0">
+  <img
+    class="whatsappLogo"
+    src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-2048.png"
+    alt=""
+  />
 </div>
