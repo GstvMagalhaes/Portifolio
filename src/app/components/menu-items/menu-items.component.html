@@ -1,97 +1,13 @@
 <div class="container">
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$"
-      alt="Product 1"
-    />
+  <div
+    class="cardItens"
+    (click)="onToggle()"
+    *ngFor="let product of listProducts"
+  >
+    <img class="productImage" [src]="product.urlimage" alt="Product 1" />
     <div class="group-text">
-      <p>Controle Dualsense Cfi-zct1 Sem Fio Ps5 Galactic Purple...</p>
-      <p style="font-weight: bold">R$ 469,00</p>
-    </div>
-  </div>
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/help/images/D2gateway/spot_efd_dot_ring.png"
-      alt="Product 1"
-    />
-    <div class="group-text">
-      <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-      <p style="font-weight: bold">R$ 229,89</p>
-    </div>
-  </div>
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      src="https://www.pioneerdj.com/-/media/pioneerdj/images/products/headphones/hdj-x5bt/black/hdj-x5bt-k-main-bt-2.png?h=630&w=1200&hash=DCDE0139A27DE3C6B4976052C7305F4C"
-      alt="Product 2"
-    />
-    <div class="group-text">
-      <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-      <p style="font-weight: bold">R$ 469,00</p>
-    </div>
-  </div>
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
-      alt="Product 2"
-    />
-    <div class="group-text">
-      <p>Console Sony Playstation 5 Standard Edition 825gb</p>
-      <p style="font-weight: bold">R$ 3.469,00</p>
-    </div>
-  </div>
-</div>
-
-<div class="container" style="margin-top: 2rem">
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      style="height: 10rem; width: 10rem"
-      class="productImage"
-      src="https://www.atacadogames.com/imagem/fones-de-ouvido/fone-de-ouvido-xiaomi-mi-redmi-buds-essential-m2222e1-bhr6606gl-preto/2/156804.jpg?pfdrid_c=true"
-      alt="Product 1"
-    />
-    <div class="group-text">
-      <p>Fone de Ouvido Xiaomi Mi Redmi Buds Essential</p>
-      <p style="font-weight: bold">R$ 469,00</p>
-    </div>
-  </div>
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      style="height: 10rem; width: 10rem"
-      src="https://images.tcdn.com.br/img/img_prod/673889/mouse_gamer_g203_8000_dpi_logitech_2347_2_5b62557c19114b6572a2d88de3fc0bfc.png"
-      alt="Product 2"
-    />
-    <div class="group-text">
-      <p>Mouse Gamer G203 8000 DPI - Logitech - Mouses</p>
-      <p style="font-weight: bold">R$ 469,00</p>
-    </div>
-  </div>
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      style="height: 10rem; width: 10rem"
-      src="https://images.samsung.com/is/image/samsung/p6pim/br/sm-m346bzsdzto/gallery/br-galaxy-m34-5g-sm-m346-sm-m346bzsdzto-538063784?$650_519_PNG$"
-      alt="Product 2"
-    />
-    <div class="group-text">
-      <p>Galaxy M14 5G Azul-Marinho 128 GB | Samsung Brasil.</p>
-      <p style="font-weight: bold">R$ 469,00</p>
-    </div>
-  </div>
-  <div class="cardItens" (click)="onToggle()">
-    <img
-      class="productImage"
-      style="height: 10rem; width: 10rem"
-      src="https://images.tcdn.com.br/img/img_prod/687149/teclado_gamer_mec_redragon_k606_og_bk_gy_lakshmi_switch_brown_101059_1_4b7da2cbb3b2da0d6032b516f02dad6a.png"
-      alt="Product 2"
-    />
-    <div class="group-text">
-      <p>Echo Dot 5ª Geração Alto-falante De 1,73 Preto Am..</p>
-      <p style="font-weight: bold">R$ 469,00</p>
+      <p>{{ product.name }}</p>
+      <p style="font-weight: bold">R$ {{ product.price }},00</p>
     </div>
   </div>
 </div>

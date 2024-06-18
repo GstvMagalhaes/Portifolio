@@ -12,14 +12,14 @@ body {
 }
 
 .logo {
-  margin-right: 65rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   max-width: 100%;
 }
 
 .icon {
   width: 5.5rem;
   height: 5.5rem;
+  margin-right: 2rem;
   border: solid 1px #00000034;
   border-radius: 5rem;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
@@ -36,4 +36,9 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 3, 5, 0.568);
   height: 8rem;
   background-image: url("../assets/Rectangle.png");
+}
+
+.navbar-nav {
+  flex-direction: row;
+  margin-left: auto;
 }
