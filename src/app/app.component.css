@@ -31,13 +31,6 @@ body {
   background: linear-gradient(to bottom, #ffffff, #76d4ff3a);
 }
 
-nav {
-  border: solid 1px #252525;
-  box-shadow: 0 4px 8px 0 rgba(0, 3, 5, 0.568);
-  height: 8rem;
-  background-image: url("../assets/Rectangle.png");
-}
-
 .navbar-nav {
   flex-direction: row;
   margin-left: auto;

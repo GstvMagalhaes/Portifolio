@@ -1,25 +1,42 @@
 import { Component } from '@angular/core';
-import { MenuItemsComponent } from '../components/menu-items/menu-items.component';
 import { CommonModule } from '@angular/common';
-import { ItemComponentComponent } from '../components/item-component/item-component.component';
+import { ProductsService } from '../../service/products.service';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
-  imports: [MenuItemsComponent, CommonModule, ItemComponentComponent],
+  imports: [CommonModule],
 })
 export class HomePageComponent {
-  constructor() {}
+  listBackendLanguages: any = [];
+  listFrontendLanguages: any = [];
+  listFrameworks: any = [];
 
-  ngOnInit() {}
+  constructor(private productService: ProductsService) {}
 
-  tela1: boolean = false;
-  tela2: boolean = true;
+  ngOnInit() {
+    this.getBackLanguages();
+    this.getFrontLanguages();
+    this.getFrameworks();
+  }
 
-  toggleComponents() {
-    this.tela1 = !this.tela1;
-    this.tela2 = !this.tela2;
+  getBackLanguages() {
+    this.productService.getAllBackEnd().subscribe((data) => {
+      this.listBackendLanguages = data;
+    });
+  }
+
+  getFrontLanguages() {
+    this.productService.getAllFrontEnd().subscribe((data) => {
+      this.listFrontendLanguages = data;
+    });
+  }
+
+  getFrameworks() {
+    this.productService.getAllFrameworks().subscribe((data) => {
+      this.listFrameworks = data;
+    });
   }
 }

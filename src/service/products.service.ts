@@ -9,7 +9,15 @@ export class ProductsService {
 
   constructor(private http: HttpClient) {}
 
-  getAllProducts() {
-    return this.http.get(this.SERVER_URL + 'products');
+  getAllBackEnd() {
+    return this.http.get(this.SERVER_URL + 'backendLanguages');
+  }
+
+  getAllFrontEnd() {
+    return this.http.get(this.SERVER_URL + 'frontendLanguages');
+  }
+
+  getAllFrameworks() {
+    return this.http.get(this.SERVER_URL + 'frameworks');
   }
 }

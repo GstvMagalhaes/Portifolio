@@ -1,47 +1,80 @@
-<div
-  style="
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-left: 36rem;
-  "
->
-  <div class="input-group">
-    <span class="input-group-text" id="basic-addon1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-search"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-        ></path>
-      </svg>
-    </span>
-    <input
-      type="text"
-      class="searchInput"
-      placeholder="Pesquise um produto"
-      aria-label="Pesquise um produto"
-      aria-describedby="basic-addon1"
-    />
+<div style="border: 2px solid #ffff"></div>
+<div class="wrapper">
+  <div class="text-img-wrapper">
+    <img src="../assets/profile.jpg" alt="Profile Image" />
+    <div class="colunm">
+      <h2>Gustavo Pereira Magalhães</h2>
+      <div class="textbox">
+        <p>
+          Tenho 21 anos e estou no mundo da programação a 2 anos. Tenho um certo
+          apresso por linguagens Front End, estruturar telas, criar layouts e me
+          aprofundar em tecnologias que me ajudem a criar um ambiente mais
+          amigável para o usuário. UI/UX é uma área que me interessa muito,
+          apesar de não ter muita experiência.
+        </p>
+      </div>
+    </div>
+    <div class="colunm">
+      <h2>Outras Habilidades</h2>
+      <div class="textbox" style="margin-left: 15px">
+        <p>
+          Já me aprofundei muito em Hardware e manutenção de computadores e
+          notebooks, montagem de computadores, instalação de sistemas. E também,
+          atualmente estou me aprofundando em SQL e banco de dados, é uma área
+          que me chamou bastante atenção e hoje em dia uso bastante no meu
+          ambiente de trabalho.
+        </p>
+      </div>
+    </div>
   </div>
-</div>
 
-<app-menu-items *ngIf="!tela1" (toggle)="toggleComponents()"></app-menu-items>
-<app-item-component
-  *ngIf="!tela2"
-  (toggle)="toggleComponents()"
-></app-item-component>
+  <div class="button-container">
+    <a href="">
+      Back End Languages
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <br />
+      <div class="cardItens">
+        <div
+          class="productImage"
+          *ngFor="let backendLanguages of listBackendLanguages"
+        >
+          <img [src]="backendLanguages.urlimage" alt="Images" />
+        </div>
+      </div>
+    </a>
 
-<div style="position: fixed; bottom: 5; right: 0">
-  <img
-    class="whatsappLogo"
-    src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-2048.png"
-    alt=""
-  />
+    <a href="">
+      Front End Languages
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <br />
+      <div class="cardItens">
+        <div
+          class="productImage"
+          *ngFor="let frontendLanguages of listFrontendLanguages"
+        >
+          <img [src]="frontendLanguages.urlimage" alt="Images" />
+        </div>
+      </div>
+    </a>
+
+    <a href="">
+      Frameworks
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <br />
+      <div class="cardItens">
+        <div class="productImage" *ngFor="let frameworks of listFrameworks">
+          <img [src]="frameworks.urlimage" alt="Images" />
+        </div>
+      </div>
+    </a>
+  </div>
 </div>
